@@ -18,9 +18,8 @@ namespace FudGApplication.Models
         public decimal FoodPrice { get; set; }
         
         //Navigation Properties
-        public List<Restaurent> Restaurents { get; set; }
-        public List<Customer> Cutomers { get; set; }
+        public ICollection<RestaurentMenu> RestaurentMenus { get; set; }
+        public ICollection<Orders> Orders { get; set; }
 
-        public List<CustomerRestaurentFoodBridge> CustomerRestaurentFoodBridges { get; set; }
-     }
+    }
 }

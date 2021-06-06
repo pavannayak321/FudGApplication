@@ -23,7 +23,8 @@ namespace FudGApplication.Models
         [DataType(DataType.EmailAddress, ErrorMessage = "E-mail is not valid")]
         public string CustomerEmailId { get; set; }
 
+
         //Navigation Property
-        public List<CustomerRestaurentFoodBridge> CustomerRestaurentFoodBridges { get; set; }
+        public ICollection<Orders> Orders { get; set; }
     }
 }

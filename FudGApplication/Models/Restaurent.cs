@@ -17,7 +17,8 @@ namespace FudGApplication.Models
         public string RestaurentAddress { get; set; }
 
         //Navigation Property
-        public List<CustomerRestaurentFoodBridge> CustomerRestaurentFoodBridges { get; set; }
+        public ICollection<RestaurentMenu> RestaurentMenus { get; set; }
+        public ICollection<Orders> Orders { get; set; }
 
     }
 }
